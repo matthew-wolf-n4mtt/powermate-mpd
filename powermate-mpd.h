@@ -1,12 +1,12 @@
 /* powermate-mpd.h
 * Music Player Daemon (MPD) Cilent that uses a Griffin PowerMate to control MPD.
 *
-* Version: 1.0.0
+* Version: 2.0.0
 * Author:  Matthew J Wolf
-* Date:    23-OCT-2017
+* Date:    05-JUN-2018
 * This file is part of Powermate-mpd.
 * By Matthew J. Wolf <mwolf@speciosus.net>
-* Copyright 2017 Matthew J. Wolf
+* Copyright 2018 Matthew J. Wolf
 *
 * Powermate-mpd is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by the
@@ -33,6 +33,8 @@
 #define MSC_PULSELED 0x01
 #endif
 
+#define LOCKFILE "/usr/local/var/run/powermate-mpd.pid"
+
 struct items_status {
    char host[46];
    int port;
@@ -58,3 +60,4 @@ int open_powermate(const char *dev, int mode);
 void powermate_led(int fd, int state);
 int AsciiDecCharToInt (char localLine[50], int start,int length);
 void signal_handler(int signal);
+void daemonize();

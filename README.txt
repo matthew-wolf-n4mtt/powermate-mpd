@@ -1,4 +1,4 @@
-20-DEC-2017 Matthew J. Wolf <matthew.wolf.hpsdr@speciosus.net>
+06-JULY-2018 Matthew J. Wolf <matthew.wolf.hpsdr@speciosus.net>
 
 Powermate-MPD is a Music Player Daemon (MPD) client that uses a 
 Griffin Powermate to control and display the status of the playback
@@ -49,6 +49,8 @@ Program Options and Defaults
         ::1 is the IPv6 local host loop-back address
 -p MPD Host Service Port
 	The MPD host service port is 6600.
+-P MPD Polling Interval (Seconds)
+        Default and Minimum is 10 seconds.
 --help 
 	Display the program usage details
 

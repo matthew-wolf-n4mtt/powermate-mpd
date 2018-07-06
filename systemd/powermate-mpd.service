@@ -1,5 +1,6 @@
 [Unit]
 Description=Power Mate MPD Client
+After=mpd.service
 
 [Service]
 Type=forking

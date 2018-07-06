@@ -1,4 +1,9 @@
 20-DEC-2017 Matthew J. Wolf <matthew.wolf.hpsdr@speciosus.net>
 
+Version 2.0.0   06-JUL-2018
+  - Added better daemonize logic.
+  - Added system logging.
+  - Updated the example systemd services file. 
+
 Version 1.0.0 	20-DEC-2017
   -Initial Version
